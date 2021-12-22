@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лаб 9_3</title>
+</head>
+<body>
+  
+  <button type="button" onclick="startTest()">Начать тест</button>
+
+  <script>
+    function startTest() {
+      let name = prompt('Введите свое имя: ');
+      let rezult = 0;
+
+      let q = confirm("HTML - язык программирования?");
+      if (!q) {
+        alert("Ответ правильный");
+        rezult += 1;
+      }else{
+        alert("Ответ неправильный");
+      }
+
+      q = confirm("Верно ли утверждение, что Вторая мировая началась в 1939 году?");
+      if (q) {
+        alert("Ответ правильный");
+        rezult += 1;
+      }else{
+        alert("Ответ неправильный");
+      }
+
+      q = confirm("2 + 2 = 4?");
+      if (q) {
+        alert("Ответ правильный");
+        rezult += 1;
+      }else{
+        alert("Ответ неправильный");
+      }
+
+      q = confirm("Верно ли утверждение, что у здорового человека 46 хромосом?");
+      if (q) {
+        alert("Ответ правильный");
+        rezult += 1;
+      }else{
+        alert("Ответ неправильный");
+      }
+
+      q = confirm("Артем Алексеевич - хороший преподователь");
+      if (q) {
+        alert("Ответ правильный");
+        rezult += 1;
+      }else{
+        alert("Ответ неправильный");
+      }
+
+      alert(name + ", вы сдали тест на  "+rezult);
+    }
+  </script>
+  
+</body>
+</html>
